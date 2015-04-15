@@ -1,0 +1,58 @@
+<style>
+
+    .col-md-2 {
+        align: center;
+        border: 2px solid #11204B;
+        border-radius: 25px;
+        width: 285px;
+        height: 400px;
+
+    }
+
+</style>
+
+<div class="container-fluid">
+  <div class="jumbotron" align="center">
+
+    <h1>Veterinary Coding Assignment </h1>
+    <p><%= image_tag "image.jpg"%></p>
+    <p class="lead"> Welcome to the login page!  Please choose from the options below:</p>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Owner</h2>
+      <p> <%= image_tag "vet.jpg"%></p>
+      <p class="lead">Click below to view the team of doctors that are currently on staff.</p>
+      <p><a class="btn btn-lg btn-primary" href=<%= doctors_path %>  role="button">Owner</a></p>
+    </div>
+
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Receptionist</h2>
+      <p> <%= image_tag "calendar.png"%></p>
+     <br> <p class="lead">Click below to make an appointment.</p>
+     <br> <p><a class="btn btn-lg btn-primary" href=<%= new_appointment_path %>  role="button">Receptionist</a></p>
+    </div>
+
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Doctor</h2>
+      <p> <%= image_tag "medical.jpeg"%></p>
+      <p class="lead">Click below to record patient history.</p>
+      <br><p><a class="btn btn-lg btn-primary" href=<%= new_pet_path %>  role="button">Doctor</a></p>
+    </div>
+
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Customer</h2>
+      <p> <%= image_tag "paw.png"%></p>
+     <br> <p class="lead">Click below view your pets next appointment.</p>
+
+      <br><p><a class="btn btn-lg btn-primary" href=<%= customers_path %>  role="button">Customer</a></p>
+    </div>
+
+
+
+    </div>
+</div>
+
+
