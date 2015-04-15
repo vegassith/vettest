@@ -7,5 +7,7 @@ Please run the following commnads...
 Bundle to install all gems
 
 rake db:create to create database
+
 rake db:migrate to create schema
+
 rake db:seed to create seed data
