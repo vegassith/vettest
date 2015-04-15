@@ -1,6 +1,6 @@
 class Appointment < ActiveRecord::Base
 
-
+has_one :doctor, foreign_key: 'id'
 
 
   validates :date, presence: true
