@@ -2,7 +2,6 @@ class CreatePets < ActiveRecord::Migration
   def change
     create_table :pets do |t|
       t.string :name, :limit => 35, null: false
-      t.references :customer, index: true
       t.references :typeofpet, index: true
       t.string :breed,  :limit => 35,  null: false
       t.integer :age, null: false
