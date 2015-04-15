@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="form-group">
-          <%= f.label :typeofpet_id, "Pet's Name:", class: 'control-label col-sm-2' %>
+          <%= f.label :typeofpet_id, "Tyoe of Pet:", class: 'control-label col-sm-2' %>
           <div class="col-sm-4">
             <%=f.collection_select :typeofpet_id,  Typeofpet.order(:name),:id, :name, {}, class: 'form-control' %>
           </div>

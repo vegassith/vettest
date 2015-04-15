@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20150413215353) do
 
   create_table "pets", force: :cascade do |t|
     t.string   "name",         limit: 35, null: false
-    t.integer  "customer_id",  limit: 4
     t.integer  "typeofpet_id", limit: 4
     t.string   "breed",        limit: 35, null: false
     t.integer  "age",          limit: 4,  null: false
@@ -50,7 +49,6 @@ ActiveRecord::Schema.define(version: 20150413215353) do
     t.datetime "updated_at",              null: false
   end
 
-  add_index "pets", ["customer_id"], name: "index_pets_on_customer_id", using: :btree
   add_index "pets", ["typeofpet_id"], name: "index_pets_on_typeofpet_id", using: :btree
 
   create_table "typeofpets", force: :cascade do |t|
